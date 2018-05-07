@@ -1,0 +1,236 @@
+		<p>Content goes here.</p>
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #222;
+	background-color: #0F0214;
+	background-image: url("http://www.photos-public-domain.com/wp-content/uploads/2011/03/dark-purple-brick-wall-texture.jpg");
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area. 
+	If you have more than one container, you are probably doing
+	something wrong. 	
+*/
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 2em;
+}
+
+.register {
+	grid-column: 2 / 4;
+	grid-row: 1;
+	border: 5px solid #fedb14;
+	background-color: #154854;
+	margin-top: 5em;
+	margin-bottom: 2em;
+	width: 1200px;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+.newyork {
+	margin-right: auto;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-top: 2em;
+	width: 1100px;
+	height: 350px;
+	padding: 2em;
+	border: 5px solid #fedb14;
+	background-color: #154854;
+	grid-column: 1 / 3;
+	grid-row: 2;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif; 
+}
+
+.london {
+	margin-right: auto;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-top: 2em;
+	width: 1100px;
+	height: 350px;
+	padding: 2em;
+	border: 5px solid #fedb14;
+	background-color: #154854;
+	grid-column: 3 / 5;
+	grid-row: 2;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif; 
+}
+
+.berlin {
+	margin-right: auto;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-top: 2em;
+	width: 1100px;
+	height: 350px;
+	padding: 2em;
+	border: 5px solid #fedb14;
+	background-color: #154854;
+	grid-column: 1 / 3;
+	grid-row: 3;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif; 
+}
+
+.doubletrouble {
+	margin-right: auto;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-top: 2em;
+	width: 1100px;
+	height: 350px;
+	padding: 2em;
+	border: 5px solid #fedb14;
+	background-color: #154854;
+	grid-column: 3 / 5;
+	grid-row: 3;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.completeexperience{
+	margin-right: auto;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-top: 2em;
+	width: 1100px;
+	height: 350px;
+	padding: 2em;
+	border: 5px solid #fedb14;
+	background-color: #154854;
+	grid-column: 2 / 4;
+	grid-row: 4;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.graffittiwide {
+	width: 1500px;
+	height: 450px;
+	background-position: fixed;
+}
+
+img{
+	margin-top: 2em;
+	margin-left: 2em;
+}
+
+h1{
+	font-family: 'Jockey One', sans-serif;
+	font-size: 70px;
+	color: #fedb14;
+	text-align: center;
+}
+
+p{ 
+    font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 1em;
+}
+
+h3{
+	font-family: 'Anton', sans-serif;
+	font-size: 50px;
+	color: #fedb14;
+	text-align: center;
+	grid-column: 2 / 4;
+	letter-spacing: 5px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin-top: 2em;
+    padding: 2em;
+    float: right;
+}
+
+.nav-bar li{
+	float: right;
+	font-family: 'Oswald', sans-serif;
+    padding: 2em;
+    font-size: 20px;
+}
+
+li a {
+    display: inline-block;
+    vertical-align: top;
+    color: #fedb14;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: right;
+}
+
+li a:hover {
+    background-color: #730851;
+}
+
+nav {
+	margin-top: 0px;
+	text-align: right;
+}
+
+#ticketphoto {
+	width: 400px;
+	height: 350px;
+	margin: 0;
+}
+
+ul {
+	float: right;
+	width: 50%;
+	color: white;
+}
+
+h4{
+	text-align: right;
+	float: right;
+	color: #fedb14;
+	width: 50%;
+}
+
+h5 {
+	text-align: right;
+	float: right;
+	padding-right: 25%;
+}
+
